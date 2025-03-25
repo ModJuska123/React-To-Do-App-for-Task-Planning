@@ -11,18 +11,19 @@ const App = () => {
     const [status, setStatus] = useState('all');
     const [filteredTodos, setFilteredTodos] = useState([]);
 
+    
     //UseEffect
     useEffect(() => {
         getLocalTodos();
-    }, []
-    );
-
+    }, []);
+    
     //useEfect
     useEffect(() => {
         filterHandler();
         saveLocalTodos();
     }, [todos, status]);
-
+    
+    
     //Filter Handler
     const filterHandler = () => {
         switch (status) {
@@ -42,14 +43,18 @@ const App = () => {
 
     //Save to local
     const saveLocalTodos = () => {
+        console.log("Saving todos to localStorage:", todos);
         localStorage.setItem("todos", JSON.stringify(todos));
-    }
-    
+    };
+        
     const getLocalTodos = () => {
+        console.log("Getting todos from localStorage:");
         if (localStorage.getItem("todos") === null) {
+            console.log("No todos in localStorage, initializing with an empty array.");
             localStorage.setItem("todos", JSON.stringify([]));
         } else {
             let todoLocal = JSON.parse(localStorage.getItem("todos"));
+            console.log("Parsed todos:", todoLocal);
             setTodos(todoLocal);
         }
         };
