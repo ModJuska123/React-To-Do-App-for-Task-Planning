@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Form = ({ inputText, setInputText, todos, setTodos }) => {
+const Form = ({ setStatus, inputText, setInputText, todos, setTodos }) => {
 
+    // Input Text Handler
     const inputTextHandler = (e) => {
-        console.log(e.target.value);
-        setInputText(e.target.value); //Palei
+        setInputText(e.target.value); 
     };
+    
+    // Submit Todo Handler
     const submitTodoHandler = (e) => {
         e.preventDefault(); //Prevent form from submitting
         setTodos([...todos,
@@ -16,22 +18,27 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
         setInputText('');
     };
 
+    // Status Handler
+    const statusHandler = (e) => {
+        setStatus(e.target.value);
+    }  
+
     return (
-        <>
+   
             <form>
-                <input value={inputText} onChange={inputTextHandler} type="text" className='todo-input' />
+                <input value={inputText} onChange={inputTextHandler} className='todo-input' />
                 <button onClick={submitTodoHandler} className='todo-button' type='submit'>
                     <i className='fas fa-plus-square'></i>
                 </button>
                 <div className='select'>
-                    <select name="todos" className="filter-todo">
+                    <select onChange={statusHandler} name="todos" className="filter-todo">
                         <option value="all">All</option>
                         <option value="completed">Completed</option>
                         <option value="uncompleted">Uncompleted</option>
                     </select>
                 </div>
             </form>
-        </>
+        
     )
 };
 
