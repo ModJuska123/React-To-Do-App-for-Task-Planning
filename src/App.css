@@ -1,4 +1,103 @@
+body{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+/* Puslapio vaizdas*/
+.App{ 
+    height: 100vh;
+    color:black;
+    background-color:hsl(48, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Pirma eilutė */
+.title{
+    font-size: 4rem;
+    text-align: center;
+    color:#fff;
+    margin-top: 0px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+/* Užduočių sąrašo divas */
+.todo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+/* Formos įvestis: pagrindinė eilutė */
+.todo-input{
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+/* Mygtukas su pliusu */
+.todo-button{
+    font-size: 2rem;
+    color:coral;
+    background-color:#fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+/* Filtro eilutė */
+.filter-todo{
+    border: none;
+    font-size: 1.5rem;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* Užduočių sąrašo: užduotis */
+.todo li{
+    border:none;
+    width: 450px;
+    padding: 7px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #000;
+    margin: 5px;
+    border-radius: 3px;
+    word-wrap: break-word;
+    list-style-type: none;
+    margin-left: 0;
+
+}
+/* Užduočių sąrašo Užbaigta mygtukas*/
+.complete-btn{
+    background-color:lightseagreen;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+/* Užduočių sąrašo Delete mygtukas*/
+.trash-btn{
+    background-color:coral;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 5px 0 0 0;
+    border-radius: 3px;
+}
+/* Užduočių sąrašo Užbaigta mygtuko stilius*/
 .completed{
     text-decoration: line-through;
-    opacity: 0.5;
+    opacity: 0.7;
 }
