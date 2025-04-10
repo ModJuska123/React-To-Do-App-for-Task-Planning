@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/React-To-Do-App-for-Task-Planning.git/static/css/main.bc4604fb.css",
-    "main.js": "/React-To-Do-App-for-Task-Planning.git/static/js/main.80e74b04.js",
-    "index.html": "/React-To-Do-App-for-Task-Planning.git/index.html",
-    "main.bc4604fb.css.map": "/React-To-Do-App-for-Task-Planning.git/static/css/main.bc4604fb.css.map",
-    "main.80e74b04.js.map": "/React-To-Do-App-for-Task-Planning.git/static/js/main.80e74b04.js.map"
+    "main.css": "/React-To-Do-App-for-Task-Planning/static/css/main.bc4604fb.css",
+    "main.js": "/React-To-Do-App-for-Task-Planning/static/js/main.80e74b04.js",
+    "index.html": "/React-To-Do-App-for-Task-Planning/index.html",
+    "main.bc4604fb.css.map": "/React-To-Do-App-for-Task-Planning/static/css/main.bc4604fb.css.map",
+    "main.80e74b04.js.map": "/React-To-Do-App-for-Task-Planning/static/js/main.80e74b04.js.map"
   },
   "entrypoints": [
     "static/css/main.bc4604fb.css",
